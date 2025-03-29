@@ -13,7 +13,7 @@ export default function Portfolio() {
   const works = [
     {
       id: 1,
-      title: "Digital Dreamscape",
+      title: "Night chat",
       category: "team",
       image: "/placeholder.svg?height=400&width=600",
       year: "2024",
@@ -21,7 +21,7 @@ export default function Portfolio() {
     },
     {
       id: 2,
-      title: "Abstract Harmony",
+      title: "Prism Social",
       category: "personal",
       image: "/placeholder.svg?height=400&width=600",
       year: "2023",
@@ -29,7 +29,7 @@ export default function Portfolio() {
     },
     {
       id: 3,
-      title: "Metal Flow",
+      title: "Shopping Website Demo",
       category: "sculptures",
       image: "/placeholder.svg?height=400&width=600",
       year: "2024",
@@ -37,7 +37,7 @@ export default function Portfolio() {
     },
     {
       id: 4,
-      title: "Neon Nights",
+      title: "Arcade Hub",
       category: "team",
       image: "/placeholder.svg?height=400&width=600",
       year: "2023",
@@ -45,7 +45,7 @@ export default function Portfolio() {
     },
     {
       id: 5,
-      title: "Nature's Whisper",
+      title: "Calender Website Demo",
       category: "personal",
       image: "/placeholder.svg?height=400&width=600",
       year: "2024",
