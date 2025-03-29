@@ -4,12 +4,12 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import * as z from "zod"
 import { motion } from "framer-motion"
+import { useState } from "react"
 
 import { Button } from "@/components/ui/button"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { useState } from "react"
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -67,10 +67,8 @@ export default function Contact() {
           viewport={{ once: true }}
           className="mx-auto max-w-2xl text-center"
         >
-          <h2 className="mb-4 text-3xl font-bold tracking-tighter sm:text-4xl">Get in Touch</h2>
-          <p className="mb-8 text-gray-400">
-            Thank you for viewing my site
-          </p>
+          <h2 className="mb-4 text-3xl font-bold tracking-tighter text-white sm:text-4xl">Get in Touch</h2>
+          <p className="mb-8 text-gray-400">Thank you for viewing my site</p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -86,11 +84,11 @@ export default function Contact() {
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Name</FormLabel>
+                    <FormLabel className="text-white">Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="Your name" {...field} />
+                      <Input placeholder="Your name" className="text-white bg-zinc-800 border border-zinc-700" {...field} />
                     </FormControl>
-                    <FormMessage />
+                    <FormMessage className="text-red-400" />
                   </FormItem>
                 )}
               />
@@ -99,11 +97,11 @@ export default function Contact() {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel className="text-white">Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="your@email.com" {...field} />
+                      <Input placeholder="your@email.com" className="text-white bg-zinc-800 border border-zinc-700" {...field} />
                     </FormControl>
-                    <FormMessage />
+                    <FormMessage className="text-red-400" />
                   </FormItem>
                 )}
               />
@@ -112,15 +110,15 @@ export default function Contact() {
                 name="message"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Message</FormLabel>
+                    <FormLabel className="text-white">Message</FormLabel>
                     <FormControl>
-                      <Textarea placeholder="Message me..." className="min-h-[120px]" {...field} />
+                      <Textarea placeholder="Message me..." className="text-white bg-zinc-800 border border-zinc-700 min-h-[120px]" {...field} />
                     </FormControl>
-                    <FormMessage />
+                    <FormMessage className="text-red-400" />
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full" disabled={submissionStatus === "loading"}>
+              <Button type="submit" className="w-full bg-white text-black hover:bg-gray-300" disabled={submissionStatus === "loading"}>
                 {submissionStatus === "loading" ? "Sending..." : "Send Message"}
               </Button>
               {submissionStatus === "success" && <p className="text-green-500 text-center">Message sent successfully!</p>}
