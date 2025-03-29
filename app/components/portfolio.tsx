@@ -15,7 +15,7 @@ export default function Portfolio() {
       id: 1,
       title: "Night chat",
       category: "team",
-      image: "c:\Users\User\Pictures\Screenshots\Screenshot 2025-03-29 144322.png",
+      image: "https://imgur.com/a/dv76cYk",
       year: "2024",
       url: "https://messaging-app-theta-seven.vercel.app/",
     },
