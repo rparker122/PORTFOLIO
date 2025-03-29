@@ -17,6 +17,7 @@ export default function Portfolio() {
       category: "team",
       image: "/placeholder.svg?height=400&width=600",
       year: "2024",
+      url: "https://example.com/digital-dreamscape",
     },
     {
       id: 2,
@@ -24,6 +25,7 @@ export default function Portfolio() {
       category: "personal",
       image: "/placeholder.svg?height=400&width=600",
       year: "2023",
+      url: "https://example.com/abstract-harmony",
     },
     {
       id: 3,
@@ -31,6 +33,7 @@ export default function Portfolio() {
       category: "sculptures",
       image: "/placeholder.svg?height=400&width=600",
       year: "2024",
+      url: "https://example.com/metal-flow",
     },
     {
       id: 4,
@@ -38,6 +41,7 @@ export default function Portfolio() {
       category: "team",
       image: "/placeholder.svg?height=400&width=600",
       year: "2023",
+      url: "https://example.com/neon-nights",
     },
     {
       id: 5,
@@ -45,6 +49,7 @@ export default function Portfolio() {
       category: "personal",
       image: "/placeholder.svg?height=400&width=600",
       year: "2024",
+      url: "https://example.com/natures-whisper",
     },
     {
       id: 6,
@@ -52,6 +57,7 @@ export default function Portfolio() {
       category: "sculptures",
       image: "/placeholder.svg?height=400&width=600",
       year: "2023",
+      url: "https://example.com/bronze-echo",
     },
   ]
 
@@ -83,21 +89,23 @@ export default function Portfolio() {
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <Card className="overflow-hidden bg-zinc-900">
-                  <CardContent className="p-0">
-                    <div className="group relative">
-                      <img
-                        src={work.image || "/placeholder.svg"}
-                        alt={work.title}
-                        className="w-full transition-transform duration-500 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        <h3 className="text-xl font-semibold text-white">{work.title}</h3>
-                        <p className="mt-2 text-sm text-gray-300">{work.year}</p>
+                <a href={work.url} target="_blank" rel="noopener noreferrer">
+                  <Card className="overflow-hidden bg-zinc-900">
+                    <CardContent className="p-0">
+                      <div className="group relative">
+                        <img
+                          src={work.image || "/placeholder.svg"}
+                          alt={work.title}
+                          className="w-full transition-transform duration-500 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                          <h3 className="text-xl font-semibold text-white">{work.title}</h3>
+                          <p className="mt-2 text-sm text-gray-300">{work.year}</p>
+                        </div>
                       </div>
-                    </div>
-                  </CardContent>
-                </Card>
+                    </CardContent>
+                  </Card>
+                </a>
               </motion.div>
             ))}
           </AnimatePresence>
@@ -106,4 +114,3 @@ export default function Portfolio() {
     </section>
   )
 }
-
