@@ -31,7 +31,7 @@ export default function Portfolio() {
       id: 3,
       title: "Shopping Website Demo",
       category: "sculptures",
-      image: "https://github.com/rparker122/image/blob/main/Screenshot%202025-03-29%20160236.png?raw=true",
+      image: "https://github.com/rparker122/image/blob/main/Screenshot%202025-03-29%20144322.png?raw=true",
       year: "2024",
       url: "https://shopping-website-nine-beta.vercel.app/",
     },
