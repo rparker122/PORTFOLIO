@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { useState } from "react"
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -23,6 +24,8 @@ const formSchema = z.object({
 })
 
 export default function Contact() {
+  const [submissionStatus, setSubmissionStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -32,8 +35,26 @@ export default function Contact() {
     },
   })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setSubmissionStatus("loading")
+    try {
+      const response = await fetch("https://formspree.io/f/xnnpdrge", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      })
+
+      if (response.ok) {
+        setSubmissionStatus("success")
+        form.reset()
+      } else {
+        throw new Error("Submission failed")
+      }
+    } catch (error) {
+      setSubmissionStatus("error")
+    }
   }
 
   return (
@@ -99,21 +120,15 @@ export default function Contact() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full">
-                Send Message
+              <Button type="submit" className="w-full" disabled={submissionStatus === "loading"}>
+                {submissionStatus === "loading" ? "Sending..." : "Send Message"}
               </Button>
+              {submissionStatus === "success" && <p className="text-green-500 text-center">Message sent successfully!</p>}
+              {submissionStatus === "error" && <p className="text-red-500 text-center">Failed to send message. Try again.</p>}
             </form>
           </Form>
         </motion.div>
       </div>
-      <div className="absolute inset-0 z-0 opacity-30">
-        <svg className="h-full w-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-          {Array.from({ length: 50 }).map((_, i) => (
-            <line key={i} x1={i * 2} y1="0" x2={i * 2} y2="100" stroke="white" strokeWidth="0.1" />
-          ))}
-        </svg>
-      </div>
     </section>
   )
 }
-
