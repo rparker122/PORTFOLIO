@@ -74,8 +74,8 @@ export default function Contact() {
           viewport={{ once: true }}
           className="mx-auto max-w-2xl text-center"
         >
-          <h2 className="mb-4 text-3xl font-bold tracking-tighter text-white sm:text-4xl">Get in Touch</h2>
-          <p className="mb-8 text-gray-400">Thank you for viewing my site</p>
+          <h2 className="mb-4 text-3xl font-bold tracking-tighter text-white sm:text-4xl">Get in touch with me</h2>
+          <p className="mb-8 text-gray-400">Thank you for viewing my site enjoy your day.</p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
