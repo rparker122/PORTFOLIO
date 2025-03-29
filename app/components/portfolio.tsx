@@ -39,7 +39,7 @@ export default function Portfolio() {
       id: 4,
       title: "Arcade Hub",
       category: "team",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "https://github.com/rparker122/image",
       year: "2025",
       url: "https://game-site-tau.vercel.app/",
     },
