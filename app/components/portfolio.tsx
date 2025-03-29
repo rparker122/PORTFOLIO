@@ -55,7 +55,7 @@ export default function Portfolio() {
       id: 6,
       title: "Bronze Echo",
       category: "sculptures",
-      image: "https://raw.githubusercontent.com/rparker122/image/main/bronze-echo.png",
+      image: "https://github.com/rparker122/image/blob/main/Screenshot%202025-03-29%20144322.png?raw=true",
       year: "2025",
       url: "https://example.com/bronze-echo",
     },
