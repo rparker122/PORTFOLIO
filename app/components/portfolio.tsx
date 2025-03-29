@@ -14,14 +14,14 @@ export default function Portfolio() {
     {
       id: 1,
       title: "Digital Dreamscape",
-      category: "digital",
+      category: "team",
       image: "/placeholder.svg?height=400&width=600",
       year: "2024",
     },
     {
       id: 2,
       title: "Abstract Harmony",
-      category: "paintings",
+      category: "personal",
       image: "/placeholder.svg?height=400&width=600",
       year: "2023",
     },
@@ -35,14 +35,14 @@ export default function Portfolio() {
     {
       id: 4,
       title: "Neon Nights",
-      category: "digital",
+      category: "team",
       image: "/placeholder.svg?height=400&width=600",
       year: "2023",
     },
     {
       id: 5,
       title: "Nature's Whisper",
-      category: "paintings",
+      category: "personal",
       image: "/placeholder.svg?height=400&width=600",
       year: "2024",
     },
