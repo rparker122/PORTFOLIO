@@ -5,12 +5,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
           <p className="text-sm text-gray-400">© {new Date().getFullYear()} Jane Doe. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="text-gray-400 hover:text-white">
-              Instagram
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
-              Twitter
-            </a>
+            
             <a href="#" className="text-gray-400 hover:text-white">
               LinkedIn
             </a>

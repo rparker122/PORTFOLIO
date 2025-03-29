@@ -91,7 +91,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          JANE DOE
+          Robert Parker
         </motion.h1>
         <motion.p
           className="max-w-[600px] text-lg text-gray-400 sm:text-xl"
@@ -99,7 +99,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Visual Artist & Creative Director
+          Computer Engineer
         </motion.p>
       </div>
     </div>
