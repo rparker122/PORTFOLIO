@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card"
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("all")
 
-  const categories = ["Favorites", "Team", "Personal", "sculptures"]
+  const categories = ["All", "Team", "Personal", "sculptures"]
 
   const works = [
     {
