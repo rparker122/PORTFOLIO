@@ -23,7 +23,7 @@ export default function Portfolio() {
       id: 2,
       title: "Prism Social",
       category: "personal",
-      image: "https://i.imgur.com/zK4LfUq.jpg",
+      image: "https://i.imgur.com/zK4LfUq.jpg", // Direct Imgur link
       year: "2024",
       url: "https://social-media-eosin-ten.vercel.app/",
     },
@@ -31,7 +31,7 @@ export default function Portfolio() {
       id: 3,
       title: "Shopping Website Demo",
       category: "sculptures",
-      image: "https://source.unsplash.com/600x400/?shopping",
+      image: "https://raw.githubusercontent.com/rparker122/image/main/shopping.png",
       year: "2024",
       url: "https://shopping-website-nine-beta.vercel.app/",
     },
@@ -47,7 +47,7 @@ export default function Portfolio() {
       id: 5,
       title: "Calendar Website Demo",
       category: "personal",
-      image: "https://source.unsplash.com/600x400/?calendar",
+      image: "https://raw.githubusercontent.com/rparker122/image/main/calendar.png",
       year: "2025",
       url: "https://calender-vert.vercel.app/",
     },
@@ -55,7 +55,7 @@ export default function Portfolio() {
       id: 6,
       title: "Bronze Echo",
       category: "sculptures",
-      image: "https://source.unsplash.com/600x400/?sculpture",
+      image: "https://raw.githubusercontent.com/rparker122/image/main/bronze-echo.png",
       year: "2025",
       url: "https://example.com/bronze-echo",
     },
@@ -94,9 +94,9 @@ export default function Portfolio() {
                     <CardContent className="p-0">
                       <div className="group relative">
                         <img
-                          src={work.image}
+                          src={work.image || "/placeholder.svg"}
                           alt={work.title}
-                          className="w-full h-60 object-cover transition-transform duration-500 group-hover:scale-105"
+                          className="w-full transition-transform duration-500 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/60 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                           <h3 className="text-xl font-semibold text-white">{work.title}</h3>
