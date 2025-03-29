@@ -24,7 +24,7 @@ export default function Portfolio() {
       title: "Prism Social",
       category: "personal",
       image: "/placeholder.svg?height=400&width=600",
-      year: "2023",
+      year: "2024",
       url: "https://social-media-eosin-ten.vercel.app/",
     },
     {
@@ -40,7 +40,7 @@ export default function Portfolio() {
       title: "Arcade Hub",
       category: "team",
       image: "/placeholder.svg?height=400&width=600",
-      year: "2023",
+      year: "2025",
       url: "https://game-site-tau.vercel.app/",
     },
     {
@@ -48,7 +48,7 @@ export default function Portfolio() {
       title: "Calender Website Demo",
       category: "personal",
       image: "/placeholder.svg?height=400&width=600",
-      year: "2024",
+      year: "2025",
       url: "https://calender-vert.vercel.app/",
     },
     {
@@ -56,7 +56,7 @@ export default function Portfolio() {
       title: "Bronze Echo",
       category: "sculptures",
       image: "/placeholder.svg?height=400&width=600",
-      year: "2023",
+      year: "2025",
       url: "https://example.com/bronze-echo",
     },
   ]
