@@ -17,7 +17,7 @@ export default function Portfolio() {
       category: "team",
       image: "/placeholder.svg?height=400&width=600",
       year: "2024",
-      url: "https://example.com/digital-dreamscape",
+      url: "https://messaging-app-theta-seven.vercel.app/",
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ export default function Portfolio() {
       category: "personal",
       image: "/placeholder.svg?height=400&width=600",
       year: "2023",
-      url: "https://example.com/abstract-harmony",
+      url: "https://social-media-eosin-ten.vercel.app/",
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ export default function Portfolio() {
       category: "sculptures",
       image: "/placeholder.svg?height=400&width=600",
       year: "2024",
-      url: "https://example.com/metal-flow",
+      url: "https://shopping-website-nine-beta.vercel.app/",
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ export default function Portfolio() {
       category: "team",
       image: "/placeholder.svg?height=400&width=600",
       year: "2023",
-      url: "https://example.com/neon-nights",
+      url: "https://game-site-tau.vercel.app/",
     },
     {
       id: 5,
@@ -49,7 +49,7 @@ export default function Portfolio() {
       category: "personal",
       image: "/placeholder.svg?height=400&width=600",
       year: "2024",
-      url: "https://example.com/natures-whisper",
+      url: "https://calender-vert.vercel.app/",
     },
     {
       id: 6,
