@@ -55,7 +55,7 @@ export default function Portfolio() {
       id: 6,
       title: "Daily Quote Generator",
       category: "sculptures",
-      image: "https://github.com/rparker122/image/blob/main/Screenshot%202025-03-29%20144322.png?raw=true",
+      image: "",
       year: "2025",
       url: "https://example.com/bronze-echo",
     },
