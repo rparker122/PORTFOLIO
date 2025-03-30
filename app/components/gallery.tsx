@@ -13,7 +13,7 @@ export default function Gallery() {
       src: "/placeholder.svg?height=600&width=400",
       alt: "Art piece 1",
       title: "Fitness App",
-      link: "https://example.com/ethereal-dreams", // Add link here
+      link: "https://fitness-app-ten-red.vercel.app/", // Add link here
     },
     {
       src: "/placeholder.svg?height=600&width=400",
