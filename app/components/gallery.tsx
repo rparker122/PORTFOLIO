@@ -25,13 +25,13 @@ export default function Gallery() {
       src: "/placeholder.svg?height=600&width=400",
       alt: "Art piece 3",
       title: "Calculator",
-      link: "https://example.com/digital-nostalgia", // Add link here
+      link: "https://calculator-pink-nu.vercel.app/", // Add link here
     },
     {
       src: "/placeholder.svg?height=600&width=400",
       alt: "Art peice 4",
       title: "Panio",
-      link: "https://example.com/abstract-reality", // Add link here
+      link: "https://piano-app-gules.vercel.app/", // Add link here
     },
   ]
 
