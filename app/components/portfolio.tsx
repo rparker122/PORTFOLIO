@@ -21,7 +21,7 @@ export default function Portfolio() {
     },
     {
       id: 2,
-      title: "Prism Social",
+      title: "Prism Social Web Demo",
       category: "personal",
       image: "https://github.com/rparker122/image/blob/main/Screenshot%202025-03-29%20170558.png?raw=true",
       year: "2024",
@@ -53,7 +53,7 @@ export default function Portfolio() {
     },
     {
       id: 6,
-      title: "Bronze Echo",
+      title: "Daily Quote Generator",
       category: "sculptures",
       image: "https://github.com/rparker122/image/blob/main/Screenshot%202025-03-29%20144322.png?raw=true",
       year: "2025",
