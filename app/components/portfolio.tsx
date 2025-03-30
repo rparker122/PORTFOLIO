@@ -8,7 +8,7 @@ import { Card, CardContent } from "@/components/ui/card"
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("all")
 
-  const categories = ["all", "team", "personal", "sculptures"]
+  const categories = ["all", "team", "personal", "favorites"]
 
   const works = [
     {
@@ -30,7 +30,7 @@ export default function Portfolio() {
     {
       id: 3,
       title: "Shopping Website Demo",
-      category: "sculptures",
+      category: "favorties",
       image: "https://github.com/rparker122/image/blob/main/Screenshot%202025-03-29%20144322.png?raw=true",
       year: "2024",
       url: "https://shopping-website-nine-beta.vercel.app/",
@@ -54,7 +54,7 @@ export default function Portfolio() {
     {
       id: 6,
       title: "Daily Quote Generator",
-      category: "sculptures",
+      category: "favorites",
       image: "",
       year: "2025",
       url: "https://example.com/bronze-echo",
