@@ -57,7 +57,7 @@ export default function Portfolio() {
       category: "favorites",
       image: "",
       year: "2025",
-      url: "https://example.com/bronze-echo",
+      url: "https://quote-generator-or.vercel.app/",
     },
   ]
 
