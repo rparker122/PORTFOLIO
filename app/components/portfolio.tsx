@@ -13,7 +13,7 @@ export default function Portfolio() {
   const works = [
     {
       id: 1,
-      title: "Night Chat",
+      title: "Night Chat - Messaging App Demo",
       category: "team",
       image: "/placeholder.svg?height=600&width=400",
       year: "2024",
@@ -21,7 +21,7 @@ export default function Portfolio() {
     },
     {
       id: 2,
-      title: "Prism Social Web Demo",
+      title: "Prism Social - Media Web Demo",
       category: "personal",
       image: "/placeholder.svg?height=600&width=400",
       year: "2024",
@@ -29,7 +29,7 @@ export default function Portfolio() {
     },
     {
       id: 3,
-      title: "Shopping Website Demo",
+      title: "ShopStyle - Shopping Website Demo",
       category: "favorites",
       image: "/placeholder.svg?height=600&width=400",
       year: "2024",
