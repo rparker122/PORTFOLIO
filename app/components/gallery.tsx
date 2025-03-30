@@ -18,7 +18,7 @@ export default function Gallery() {
     {
       src: "/placeholder.svg?height=600&width=400",
       alt: "Art piece 2",
-      title: "Art website",
+      title: "Weather App",
       link: "https://example.com/urban-symphony", // Add link here
     },
     {
