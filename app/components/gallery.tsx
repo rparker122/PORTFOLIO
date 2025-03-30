@@ -12,24 +12,24 @@ export default function Gallery() {
     {
       src: "/placeholder.svg?height=600&width=400",
       alt: "Art piece 1",
-      title: "Ethereal Dreams",
+      title: "Fitness App",
       link: "https://example.com/ethereal-dreams", // Add link here
     },
     {
       src: "/placeholder.svg?height=600&width=400",
       alt: "Art piece 2",
-      title: "Urban Symphony",
+      title: "Art website",
       link: "https://example.com/urban-symphony", // Add link here
     },
     {
       src: "/placeholder.svg?height=600&width=400",
       alt: "Art piece 3",
-      title: "Digital Nostalgia",
+      title: "Calculator",
       link: "https://example.com/digital-nostalgia", // Add link here
     },
     {
       src: "/placeholder.svg?height=600&width=400",
-      alt: "Art piece 4",
+      alt: "Panio",
       title: "Abstract Reality",
       link: "https://example.com/abstract-reality", // Add link here
     },
