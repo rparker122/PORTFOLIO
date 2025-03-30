@@ -13,21 +13,25 @@ export default function Gallery() {
       src: "/placeholder.svg?height=600&width=400",
       alt: "Art piece 1",
       title: "Ethereal Dreams",
+      link: "https://example.com/ethereal-dreams", // Add link here
     },
     {
       src: "/placeholder.svg?height=600&width=400",
       alt: "Art piece 2",
       title: "Urban Symphony",
+      link: "https://example.com/urban-symphony", // Add link here
     },
     {
       src: "/placeholder.svg?height=600&width=400",
       alt: "Art piece 3",
       title: "Digital Nostalgia",
+      link: "https://example.com/digital-nostalgia", // Add link here
     },
     {
       src: "/placeholder.svg?height=600&width=400",
       alt: "Art piece 4",
       title: "Abstract Reality",
+      link: "https://example.com/abstract-reality", // Add link here
     },
   ]
 
@@ -44,8 +48,10 @@ export default function Gallery() {
         </motion.h2>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {images.map((image, index) => (
-            <motion.div
+            <motion.a
               key={index}
+              href={image.link} // Wrap the div in a link
+              target="_blank" // Open link in a new tab
               className="group relative overflow-hidden rounded-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -61,11 +67,10 @@ export default function Gallery() {
               <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <h3 className="text-xl font-semibold text-white">{image.title}</h3>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>
     </section>
   )
 }
-
