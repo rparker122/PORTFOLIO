@@ -23,7 +23,7 @@ export default function Portfolio() {
       id: 2,
       title: "Prism Social",
       category: "personal",
-      image: "https://github.com/rparker122/image/blob/main/Screenshot%202025-03-29%20155926.png?raw=true",
+      image: "https://github.com/rparker122/image/blob/main/Screenshot%202025-03-29%20170558.png?raw=true",
       year: "2024",
       url: "https://social-media-eosin-ten.vercel.app/",
     },
