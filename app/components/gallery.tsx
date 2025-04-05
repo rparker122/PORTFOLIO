@@ -19,7 +19,7 @@ export default function Gallery() {
       src: "/placeholder.svg?height=600&width=400",
       alt: "Art piece 2",
       title: "Weather App",
-      link: "https://weather-app-omega-gules-62.vercel.app/", // Add link here
+      link: "https://weather-app-seven-lake-26.vercel.app/", // Add link here
     },
     {
       src: "/placeholder.svg?height=600&width=400",
