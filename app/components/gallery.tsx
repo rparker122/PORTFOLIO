@@ -13,25 +13,25 @@ export default function Gallery() {
       src: "/placeholder.svg?height=600&width=400",
       alt: "Art piece 1",
       title: "Fitness App",
-      link: "https://fitness-app-ten-red.vercel.app/",
+      link: "https://fitness-app-ten-red.vercel.app/", // Add link here
     },
     {
       src: "https://raw.githubusercontent.com/rparker122/images/05f274308b9c47c15dc4c15345635ac3d02b047e/demo%20calendar%20FINAL.jpg",
       alt: "Art piece 2",
       title: "Weather App",
-      link: "https://weather-app-seven-lake-26.vercel.app/",
+      link: "https://weather-app-seven-lake-26.vercel.app/", // Add link here
     },
     {
       src: "/placeholder.svg?height=600&width=400",
       alt: "Art piece 3",
       title: "Calculator",
-      link: "https://calculator-pink-nu.vercel.app/",
+      link: "https://calculator-pink-nu.vercel.app/", // Add link here
     },
     {
       src: "/placeholder.svg?height=600&width=400",
-      alt: "Art piece 4",
+      alt: "Art peice 4",
       title: "Piano",
-      link: "https://piano-app-jet.vercel.app/",
+      link: "https://piano-app-jet.vercel.app/", // Add link here
     },
   ]
 
@@ -50,22 +50,20 @@ export default function Gallery() {
           {images.map((image, index) => (
             <motion.a
               key={index}
-              href={image.link}
-              target="_blank"
+              href={image.link} // Wrap the div in a link
+              target="_blank" // Open link in a new tab
               className="group relative overflow-hidden rounded-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
             >
-              {/* Container for the image */}
-              <div className="relative w-[600px] h-[400px] flex justify-center items-center bg-white border border-gray-200">
+              <div className="aspect-[2/3] overflow-hidden">
                 <img
                   src={image.src || "/placeholder.svg"}
                   alt={image.alt}
-                  className="object-contain w-full h-full transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              {/* Title and overlay */}
               <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <h3 className="text-xl font-semibold text-white">{image.title}</h3>
               </div>
@@ -76,4 +74,3 @@ export default function Gallery() {
     </section>
   )
 }
-
