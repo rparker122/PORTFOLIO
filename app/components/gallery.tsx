@@ -13,25 +13,25 @@ export default function Gallery() {
       src: "/placeholder.svg?height=600&width=400",
       alt: "Art piece 1",
       title: "Fitness App",
-      link: "https://fitness-app-ten-red.vercel.app/", // Add link here
+      link: "https://fitness-app-ten-red.vercel.app/",
     },
     {
-      src: "https://raw.githubusercontent.com/rparker122/images/05f274308b9c47c15dc4c15345635ac3d02b047e/demo%20calendar%20FINAL.jpg",
+      src: "https://raw.githubusercontent.com/rparker122/images/main/demo%20calendar%20FINAL2%20(2).jpg", // ✅ raw GitHub image link
       alt: "Art piece 2",
       title: "Weather App",
-      link: "https://weather-app-seven-lake-26.vercel.app/", // Add link here
+      link: "https://weather-app-seven-lake-26.vercel.app/",
     },
     {
       src: "/placeholder.svg?height=600&width=400",
       alt: "Art piece 3",
       title: "Calculator",
-      link: "https://calculator-pink-nu.vercel.app/", // Add link here
+      link: "https://calculator-pink-nu.vercel.app/",
     },
     {
       src: "/placeholder.svg?height=600&width=400",
-      alt: "Art peice 4",
+      alt: "Art piece 4",
       title: "Piano",
-      link: "https://piano-app-jet.vercel.app/", // Add link here
+      link: "https://piano-app-jet.vercel.app/",
     },
   ]
 
@@ -50,8 +50,8 @@ export default function Gallery() {
           {images.map((image, index) => (
             <motion.a
               key={index}
-              href={image.link} // Wrap the div in a link
-              target="_blank" // Open link in a new tab
+              href={image.link}
+              target="_blank"
               className="group relative overflow-hidden rounded-lg"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
