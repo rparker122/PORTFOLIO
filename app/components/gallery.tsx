@@ -16,7 +16,7 @@ export default function Gallery() {
       link: "https://fitness-app-ten-red.vercel.app/",
     },
     {
-      src: "https://raw.githubusercontent.com/rparker122/images/main/demo%20calendar%20FINAL2%20(2).jpg", // ✅ raw GitHub image link
+      src: "/placeholder.svg?height=600&width=400", 
       alt: "Art piece 2",
       title: "Weather App",
       link: "https://weather-app-seven-lake-26.vercel.app/",
