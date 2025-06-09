@@ -47,7 +47,7 @@ export default function Portfolio() {
       id: 5,
       title: "Calendar Website Demo",
       category: "personal",
-      image: "/placeholder.svg?height=600&width=400",
+      image: "https://raw.githubusercontent.com/rparker122/images/main/demo%20calendar%20FINAL350x240.jpg",
       year: "2025",
       url: "https://calender-vert.vercel.app/",
     },
