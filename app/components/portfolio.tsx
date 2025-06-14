@@ -19,22 +19,7 @@ export default function Portfolio() {
       year: "2024",
       url: "https://messaging-app-theta-seven.vercel.app/",
     },
-    {
-      id: 2,
-      title: "Prism Social - Media Web Demo",
-      category: "personal",
-      image: "/placeholder.svg?height=600&width=400",
-      year: "2024",
-      url: "https://social-media-eosin-ten.vercel.app/",
-    },
-    {
-      id: 3,
-      title: "ShopStyle - Shopping Website Demo",
-      category: "favorites",
-      image: "/placeholder.svg?height=600&width=400",
-      year: "2024",
-      url: "https://shopping-website-nine-beta.vercel.app/",
-    },
+   
     {
       id: 4,
       title: "Arcade Hub",
